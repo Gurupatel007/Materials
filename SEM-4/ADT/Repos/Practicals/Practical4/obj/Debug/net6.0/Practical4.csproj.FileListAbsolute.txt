@@ -1,0 +1,15 @@
+E:\SEMwise Materials\SEM 4\ADT\Repos\Practicals\Practical4\bin\Debug\net6.0\Practical4.exe
+E:\SEMwise Materials\SEM 4\ADT\Repos\Practicals\Practical4\bin\Debug\net6.0\Practical4.deps.json
+E:\SEMwise Materials\SEM 4\ADT\Repos\Practicals\Practical4\bin\Debug\net6.0\Practical4.runtimeconfig.json
+E:\SEMwise Materials\SEM 4\ADT\Repos\Practicals\Practical4\bin\Debug\net6.0\Practical4.dll
+E:\SEMwise Materials\SEM 4\ADT\Repos\Practicals\Practical4\bin\Debug\net6.0\Practical4.pdb
+E:\SEMwise Materials\SEM 4\ADT\Repos\Practicals\Practical4\obj\Debug\net6.0\Practical4.csproj.AssemblyReference.cache
+E:\SEMwise Materials\SEM 4\ADT\Repos\Practicals\Practical4\obj\Debug\net6.0\Practical4.GeneratedMSBuildEditorConfig.editorconfig
+E:\SEMwise Materials\SEM 4\ADT\Repos\Practicals\Practical4\obj\Debug\net6.0\Practical4.AssemblyInfoInputs.cache
+E:\SEMwise Materials\SEM 4\ADT\Repos\Practicals\Practical4\obj\Debug\net6.0\Practical4.AssemblyInfo.cs
+E:\SEMwise Materials\SEM 4\ADT\Repos\Practicals\Practical4\obj\Debug\net6.0\Practical4.csproj.CoreCompileInputs.cache
+E:\SEMwise Materials\SEM 4\ADT\Repos\Practicals\Practical4\obj\Debug\net6.0\Practical4.dll
+E:\SEMwise Materials\SEM 4\ADT\Repos\Practicals\Practical4\obj\Debug\net6.0\refint\Practical4.dll
+E:\SEMwise Materials\SEM 4\ADT\Repos\Practicals\Practical4\obj\Debug\net6.0\Practical4.pdb
+E:\SEMwise Materials\SEM 4\ADT\Repos\Practicals\Practical4\obj\Debug\net6.0\Practical4.genruntimeconfig.cache
+E:\SEMwise Materials\SEM 4\ADT\Repos\Practicals\Practical4\obj\Debug\net6.0\ref\Practical4.dll

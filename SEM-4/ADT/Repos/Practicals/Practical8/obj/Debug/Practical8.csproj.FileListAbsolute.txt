@@ -1,0 +1,11 @@
+E:\SEMwise Materials\SEM 4\ADT\Repos\Practicals\Practical8\bin\Debug\Practical8.exe.config
+E:\SEMwise Materials\SEM 4\ADT\Repos\Practicals\Practical8\bin\Debug\Practical8.exe
+E:\SEMwise Materials\SEM 4\ADT\Repos\Practicals\Practical8\bin\Debug\Practical8.pdb
+E:\SEMwise Materials\SEM 4\ADT\Repos\Practicals\Practical8\obj\Debug\Practical8.csproj.AssemblyReference.cache
+E:\SEMwise Materials\SEM 4\ADT\Repos\Practicals\Practical8\obj\Debug\Practical8.csproj.SuggestedBindingRedirects.cache
+E:\SEMwise Materials\SEM 4\ADT\Repos\Practicals\Practical8\obj\Debug\Practical8.Form1.resources
+E:\SEMwise Materials\SEM 4\ADT\Repos\Practicals\Practical8\obj\Debug\Practical8.Properties.Resources.resources
+E:\SEMwise Materials\SEM 4\ADT\Repos\Practicals\Practical8\obj\Debug\Practical8.csproj.GenerateResource.cache
+E:\SEMwise Materials\SEM 4\ADT\Repos\Practicals\Practical8\obj\Debug\Practical8.csproj.CoreCompileInputs.cache
+E:\SEMwise Materials\SEM 4\ADT\Repos\Practicals\Practical8\obj\Debug\Practical8.exe
+E:\SEMwise Materials\SEM 4\ADT\Repos\Practicals\Practical8\obj\Debug\Practical8.pdb

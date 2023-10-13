@@ -1,0 +1,5 @@
+E:\SEMwise Materials\SEM 4\ADT\Repos\Practicals\Practical2\obj\Debug\net6.0\Practical2.csproj.AssemblyReference.cache
+E:\SEMwise Materials\SEM 4\ADT\Repos\Practicals\Practical2\obj\Debug\net6.0\Practical2.GeneratedMSBuildEditorConfig.editorconfig
+E:\SEMwise Materials\SEM 4\ADT\Repos\Practicals\Practical2\obj\Debug\net6.0\Practical2.AssemblyInfoInputs.cache
+E:\SEMwise Materials\SEM 4\ADT\Repos\Practicals\Practical2\obj\Debug\net6.0\Practical2.AssemblyInfo.cs
+E:\SEMwise Materials\SEM 4\ADT\Repos\Practicals\Practical2\obj\Debug\net6.0\Practical2.csproj.CoreCompileInputs.cache

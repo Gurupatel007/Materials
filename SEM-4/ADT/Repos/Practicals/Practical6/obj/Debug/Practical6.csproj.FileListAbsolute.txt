@@ -1,0 +1,13 @@
+E:\SEMwise Materials\SEM 4\ADT\Repos\Practicals\Practical6\bin\Debug\Practical6.exe.config
+E:\SEMwise Materials\SEM 4\ADT\Repos\Practicals\Practical6\bin\Debug\Practical6.exe
+E:\SEMwise Materials\SEM 4\ADT\Repos\Practicals\Practical6\bin\Debug\Practical6.pdb
+E:\SEMwise Materials\SEM 4\ADT\Repos\Practicals\Practical6\obj\Debug\Practical6.csproj.AssemblyReference.cache
+E:\SEMwise Materials\SEM 4\ADT\Repos\Practicals\Practical6\obj\Debug\Practical6.csproj.SuggestedBindingRedirects.cache
+E:\SEMwise Materials\SEM 4\ADT\Repos\Practicals\Practical6\obj\Debug\Practical6.Form1.resources
+E:\SEMwise Materials\SEM 4\ADT\Repos\Practicals\Practical6\obj\Debug\Practical6.Properties.Resources.resources
+E:\SEMwise Materials\SEM 4\ADT\Repos\Practicals\Practical6\obj\Debug\Practical6.csproj.GenerateResource.cache
+E:\SEMwise Materials\SEM 4\ADT\Repos\Practicals\Practical6\obj\Debug\Practical6.csproj.CoreCompileInputs.cache
+E:\SEMwise Materials\SEM 4\ADT\Repos\Practicals\Practical6\obj\Debug\Practical6.exe
+E:\SEMwise Materials\SEM 4\ADT\Repos\Practicals\Practical6\obj\Debug\Practical6.pdb
+E:\SEMwise Materials\SEM 4\ADT\Repos\Practicals\Practical6\obj\Debug\Practical6.P6_2.resources
+E:\SEMwise Materials\SEM 4\ADT\Repos\Practicals\Practical6\obj\Debug\Practical6.P6_3.resources
