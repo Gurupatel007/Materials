@@ -1,0 +1,16 @@
+from tkinter import *
+top=Tk()
+top.geometry('300x200')
+# sb=Scrollbar(top)
+# sb.pack(side=RIGHT,fill=Y)
+# mylist=Listbox(top,yscrollcommand=sb.set)
+# for i in range(50):
+#     mylist.insert(END,"Number"+str(i))
+# mylist.pack()
+# sb.config(command=mylist.yview)
+sb=Scrollbar(top)
+sb.pack(side=RIGHT,fill=Y)
+en=Entry(top,xscrollcommand=sb.set)
+en.pack()
+sb.config(command=en.xview)
+top.mainloop()
