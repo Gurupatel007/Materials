@@ -1,0 +1,29 @@
+Exercise 1 {} 
+
+
+Create 7 nodes in people label having properties name,department,address,age
+create 7 nodes in film label having properties title, releasedyear,directorname
+Create relationships called friend, brother, and favourite nodes.
+Queries:
+What are the favourite movies of abc(Username)
+Who are friends of abc
+Add a property called mobile_no for person abc and xyz
+Remove mobile_no property for person xyz
+Delete a relationship called brother 
+Delete a node having age 23
+Display details of node whose name is abc and age is 23
+display details of node having name abc or pqr
+
+
+
+Exercise 2
+
+Movies Database(From moodle, download only if not using desktop)
+Queries:
+1.Find actors born in 1965 or later
+2.Find titles of movies in which "Jiri Machacea" played a role
+3.Find actors who played with "Ivan Trojan" 
+4.Find the actor name "Tom Hanks"
+5.Find the movie with title "Cloud Atlas"
+6.Find the movies released in 1990's
+7.Find out who directed "Cloud Atlas"
