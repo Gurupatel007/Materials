@@ -1,0 +1,6 @@
+Book Title: Harry Potter
+           
+Book Author: Guru Patel
+           
+Book Price: 499
+
