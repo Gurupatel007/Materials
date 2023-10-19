@@ -1,3 +1,4 @@
+console.log('21012011074')
 const http = require('http');
 const url = require('url');
 const mysql = require('mysql');
@@ -56,5 +57,5 @@ http.createServer((req, res) => {
         res.end();
     }
 }).listen(5050, () => {
-    console.log('Server listening on port 8080!');
+    console.log('Server listening on port 5050!');
 });
