@@ -1,0 +1,96 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Task Manager</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Task Manager</h1>
+        <form action="/tasks" method="post">
+            <input type="text" name="task" placeholder="Add a task" required>
+            <button type="submit">Add Task</button>
+        </form>
+        <ul>
+            <% tasks.forEach(task => { %>
+                <li class="<%= task.completed ? 'completed' : '' %>">
+                    <span><%= task.description %></span>
+                    <form action="/complete-task/<%= task.id %>" method="post">
+                        <button type="submit">Mark as Complete</button>
+                    </form>
+                    <form action="/remove-task/<%= task.id %>" method="post">
+                        <button type="submit">Remove</button>
+                    </form>
+                </li>
+            <% }); %>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> -->
+
+
+
+<!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Task Manager</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Task Manager</h1>
+        <form action="/tasks" method="post">
+            <input type="text" name="task" placeholder="Add a task" required>
+            <button type="submit">Add Task</button>
+        </form>
+        <ul>
+            <% tasks.forEach(task => { %>
+                <li class="<%= task.completed ? 'completed' : '' %>">
+                    <span><%= task.description %></span>
+                    <form action="/complete-task/<%= task.id %>" method="post">
+                        <button type="submit">Mark as Complete</button>
+                    </form>
+                    <form action="/remove-task/<%= task.id %>" method="post">
+                        <button type="submit">Remove</button>
+                    </form>
+                </li>
+            <% }); %>
+        </ul>
+    </div>
+</body>
+</html> -->
+
+
+
+
+<!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Manager</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Task Manager</h1>
+        <form action="/tasks" method="post">
+            <input type="text" name="task" placeholder="Add a task" required>
+            <button type="submit">Add Task</button>
+        </form>
+        <ul>
+            <% tasks.forEach(task => { %>
+                <li class="<%= task.completed ? 'completed' : '' %>">
+                    <span><%= task.description %></span>
+                    <a href="/complete-task/<%= task.id %>">Mark as Complete</a>
+                    <a href="/remove-task/<%= task.id %>">Remove</a>
+                </li>
+            <% }); %>
+        </ul>
+    </div>
+</body>
+</html>
