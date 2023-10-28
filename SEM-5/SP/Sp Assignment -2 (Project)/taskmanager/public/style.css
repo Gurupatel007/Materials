@@ -88,3 +88,17 @@ input[type="checkbox"] {
     text-decoration: line-through; /* Add a line over the text */
     color: #777; /* Change text color for completed tasks (optional) */
 }
+
+.not-completed {
+    text-decoration: none; /* Remove the line decoration for not completed tasks */
+}
+
+.complete-link {
+    color: green; /* Change the color of the link */
+    /* text-decoration: none; Remove underline from the link */
+}
+
+.complete-link:hover {
+    text-decoration: underline; /* Underline the link on hover */
+}
+

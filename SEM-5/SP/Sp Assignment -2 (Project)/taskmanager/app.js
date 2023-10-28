@@ -51,6 +51,29 @@ app.post('/tasks', (req, res) => {
 
 app.get('/complete-task/:id', (req, res) => {
     const taskId = req.params.id;
+    connection.query('SELECT completed FROM tasks WHERE id = ?', [taskId], (err, rows) => {
+        if (err) {
+            console.error(err);
+        } else {
+            const currentStatus = rows[0].completed;
+            const newStatus = currentStatus === 0 ? 1 : 0;
+
+            connection.query('UPDATE tasks SET completed = ? WHERE id = ?', [newStatus, taskId], (err) => {
+                if (err) {
+                    console.error(err);
+                }
+                res.redirect('/');
+            });
+        }
+    });
+});
+
+
+
+/*  if only you have to add the task and not undo it
+
+app.get('/complete-task/:id', (req, res) => {
+    const taskId = req.params.id;
     connection.query('UPDATE tasks SET completed = 1 WHERE id = ?', [taskId], (err) => {
         if (err) {
             console.error(err);
@@ -58,6 +81,8 @@ app.get('/complete-task/:id', (req, res) => {
         res.redirect('/');
     });
 });
+*/
+
 
 app.get('/remove-task/:id', (req, res) => {
     const taskId = req.params.id;
@@ -69,29 +94,7 @@ app.get('/remove-task/:id', (req, res) => {
     });
 });
 
-
-// ----------------------------------------------------------------------------------------------------------------------------
-
-// app.post('/complete-task', (req, res) => {
-//     const taskId = req.body.completed;
-//     connection.query('UPDATE tasks SET completed = 1 WHERE id = ?', [taskId], (err) => {
-//         if (err) {
-//             console.error(err);
-//         }
-//         res.redirect('/');
-//     });
-// });
-
-
-// app.post('/remove-task', (req, res) => {
-//     const taskId = req.body.remove;
-//     connection.query('DELETE FROM tasks WHERE id = ?', [taskId], (err) => {
-//         if (err) {
-//             console.error(err);
-//         }
-//         res.redirect('/');
-//     });
-// });
+// Start the server
 
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
