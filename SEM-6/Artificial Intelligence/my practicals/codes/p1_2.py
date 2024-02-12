@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 """
-Created on Fri Feb  2 09:27:38 2024
+Created on Fri Feb  9 10:40:07 2024
 
 @author: gurup
 """
+
 class Node:
     def __init__(self,name,children,parent):
         self.name = name
@@ -116,7 +117,7 @@ obj_isha = tree.insert_node("isha", obj_ajay)
 #child of nidhi
 obj_prem = tree.insert_node("prem", obj_nidhi)
 obj_lina = tree.insert_node("lina", obj_nidhi)
-
+'''
 def bfs_search(tree,search_string):
     queue = [tree.root]
     while(len(queue)!=0):
@@ -125,7 +126,28 @@ def bfs_search(tree,search_string):
             return pop_node
         queue.extend(pop_node.children)
     return None
+'''
+def dfs_search(tree,search_string):
+    stack = [tree.root]
+    visited = set()  # Keep track of visited nodes for efficiency
 
+    while stack:
+        current_node = stack.pop()
+
+        # Skip already visited nodes
+        if current_node.name in visited:
+            continue
+
+        visited.add(current_node.name)
+
+        # Check if found
+        if current_node.name == search_string:
+            return current_node
+
+        # Push children onto the stack in reverse order for LIFO exploration
+        stack.extend(reversed(current_node.children))
+    return None
+        
 def print_path(node):
     r_list=[]
     while(node!=None):
@@ -141,7 +163,7 @@ print(tree.root.children[0].name)  # Output: rahul
 print(tree.root.children[0].children[0].name)  # Output: sanjay
 '''
 search_string = input("Enter the search string: ")
-result = bfs_search(tree, search_string) 
+result = dfs_search(tree, search_string) 
 if(result!=None):
     print_path(result)
 else:
