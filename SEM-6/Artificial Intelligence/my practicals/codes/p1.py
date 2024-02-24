@@ -117,6 +117,16 @@ obj_isha = tree.insert_node("isha", obj_ajay)
 obj_prem = tree.insert_node("prem", obj_nidhi)
 obj_lina = tree.insert_node("lina", obj_nidhi)
 
+
+def print_path(node):
+    r_list=[]
+    while(node!=None):
+        r_list.append(node.name)
+        node = node.parent
+    reverse_list= r_list[::-1]
+    print("Path: ",'->'.join(reverse_list))
+    print("cost: ",(len(reverse_list)-1))
+    
 def bfs_search(tree,search_string):
     queue = [tree.root]
     while(len(queue)!=0):
@@ -126,14 +136,6 @@ def bfs_search(tree,search_string):
         queue.extend(pop_node.children)
     return None
 
-def print_path(node):
-    r_list=[]
-    while(node!=None):
-        r_list.append(node.name);
-        node = node.parent
-    reverse_list= r_list[::-1]
-    print("Path: ",'->'.join(reverse_list));
-    print("cost: ",(len(reverse_list)-1))
 
 '''
 print(tree.root.name)  # Output: amit
