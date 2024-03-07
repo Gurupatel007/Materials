@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    /* font-family: Montserrat; */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* .container {
+    width: 80%;
+    margin: 0 auto;
+} */
+.container {
+    width: 60%; /* Decrease this to reduce the width of the content */
+    margin: 0 auto; /* This will center the content */
+}
+
+.main-title {
+    text-align: center;
+    padding: 20px 0;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #333;
+    color: #fff;
+}
+
+.product-det {
+    font-weight: bold;
+}
+
+.product-price, .product-quantity, .product-subtotal {
+    text-align: center;
+}

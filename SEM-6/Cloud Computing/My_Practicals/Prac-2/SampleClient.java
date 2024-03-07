@@ -1,7 +1,6 @@
 import java.rmi.RemoteException;
 import java.rmi.*;
-import java.rmi.server.*;
-com SampleClient;
+import java.rmi.Naming;
 
 public class SampleClient {
     public static void main(String[] args) {
