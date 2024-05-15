@@ -1,5 +1,3 @@
-import time
-print("21012011074_Guru Patel")
 class Node:
   def __init__(self,x,y,parent):
     self.x = x
@@ -90,28 +88,22 @@ class bfs_search:
     self.w = w
 
   def execution(self):
-    start_time = time.time()
     queue = [self.initial_state]
-    # visited = set()
     while(len(queue) != 0):
       current_node = queue.pop(0)
-      # if (current_node.x, current_node.y) in visited:
-        # continue  # Skip this node if it has already been visited.
-      # visited.add((current_node.x, current_node.y))
-      if current_node.x == self.w.goal_state.x:# and current_node.y == self.w.goal_state.y:
-        end_time = time.time()
-        execution_time = (end_time-start_time)*1000
-        return current_node,execution_time
+    #   print("Current Node: ",current_node,", Goal State: ",self.w.goal_state)
+      if current_node.x == self.w.goal_state.x and current_node.y == self.w.goal_state.y:
+        return current_node
       queue.extend(current_node.generateAllsuccesor(self.w))
-    return None,None
+    return None
 
 def print_path(node):
     r_list=[]
     while(node!=None):
-        r_list.append(repr(node))
+        r_list.append(repr(node));
         node = node.parent
     reverse_list= r_list[::-1]
-    print("Path: ",'->'.join(reverse_list))
+    print("Path: ",'->'.join(reverse_list));
     print("cost: ",len(reverse_list)-1)
 
 
@@ -120,7 +112,17 @@ maxjug2 = int(input("Enter the max value of jug2: "))
 goal_state_x = int(input("Enter the goal state of jug1: "))
 # goal_state_y = int(input("Enter the goal state of jug2: "))
 
+if maxjug1 <= 0 or maxjug2 <= 0 or goal_state_x <= 0:
+    print("Please enter a positive value.")
+elif maxjug1 == 1:
+    print("The maxjug1 value can't be 1")
 
+# w = waterjug(maxjug1, maxjug2, Node(goal_state_x, 0, None))
+# initial_state = Node(0, 0, None)
+# bfs = bfs_search(initial_state, w)
+# result_node = bfs.execution()
+# print_path(result_node)
+    
 if maxjug1 <= 0 or maxjug2 <= 0:
     print("Jug capacities must be positive values.")
 elif goal_state_x < 0 or goal_state_x > maxjug1:# or goal_state_y < 0 or goal_state_y > maxjug2:
@@ -131,10 +133,27 @@ else:
     w = waterjug(maxjug1, maxjug2, Node(goal_state_x, 0, None))
     initial_state = Node(0, 0, None)
     bfs = bfs_search(initial_state, w)
-    result_node,execution_time = bfs.execution()
+    result_node = bfs.execution()
     if result_node:
         print("Solution Found\n")
         print_path(result_node)
-        print("Execution time :",execution_time," ms")
     else:
         print("No solution found.")
+
+
+# for goalstate of maxjug2 uncomment below code and comment above code
+""""
+if maxjug1 <= 0 or maxjug2 <= 0:
+    print("Jug capacities must be positive values.")
+elif goal_state_x < 0 or goal_state_x > maxjug1:# or goal_state_y < 0 or goal_state_y > maxjug2:
+    print("Please enter valid goal states for jugs that do not exceed their capacities and are non-negative.")
+else:
+    w = waterjug(maxjug1, maxjug2, Node(goal_state_x, goal_state_y, None))
+    initial_state = Node(0, 0, None)
+    bfs = bfs_search(initial_state, w)
+    result_node = bfs.execution()
+    if result_node:
+        print_path(result_node)
+    else:
+        print("No solution found.")
+"""

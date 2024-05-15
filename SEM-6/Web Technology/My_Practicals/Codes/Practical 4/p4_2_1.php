@@ -13,41 +13,37 @@
         <table>
             <tr>
                 <td>Buyer's Name:</td>
-                <td><input type="text" name="name" id="name"></td>
+                <td><input type="text" name="name" id="name" required></td>
             </tr>
             <tr>
                 <td>Mobile No:</td>
-                <td><input type="tel" id="phone" name="phone" pattern="\+91[0-9]{10}" placeholder="+917963552563"></td>
+                <td><input type="tel" id="phone" name="phone" pattern="\+91[0-9]{10}" placeholder="+917963552563" required></td>
             </tr>
         </table>
         <table>
-            <tr></tr>
-            <tr></tr>
             <tr class="product">
                 <th>Product Name</th>
                 <th>Price</th>
                 <th>Quantity</th>
             </tr>
-            <tr>
-                <td class="product-det">Twisties</td>
-                <td class="product-price">RM 3.00</td>
-                <td class="product-quantity"><input type="number" name="twisties" id="twisties" min="0" max="10"></td>
-            </tr>
-            <tr>
-                <td class="product-det">Cadbury's Chocolate</td>
-                <td class="product-price">RM 3.50</td>
-                <td class="product-quantity"><input type="number" name="cadbury" id="cadbury" min="0" max="10"></td>
-            </tr>
-            <tr>
-                <td class="product-det">Cadbury's Nut Chocolate</td>
-                <td class="product-price">RM 4.50</td>
-                <td class="product-quantity"><input type="number" name="cadburyNut" id="cadburyNut" min="0" max="10"></td>
-            </tr>
-            <tr>
-                <td class="product-det">Cloud 9</td>
-                <td class="product-price">RM 0.30</td>
-                <td class="product-quantity"><input type="number" name="cloud9" id="cloud9" min="0" max="10"></td>
-            </tr>
+            <?php
+                $fp = fopen("Product_Name.csv", "r");
+                while(!feof($fp)){
+                    $a = fgetcsv($fp);
+                    if (is_array($a)) {
+                        $i = 0;
+                        $count = 0;
+                        echo "<tr><td>".$a[$i]."</td>";
+                        $i++;
+                        echo "<td>".$a[$i]."</td>";
+                        $i++;
+                        echo '<td><input type="number" value="0" name="item[]" id="item.$count" min="0" max="10"></td>';
+                        $count++;
+                        echo "</tr>";
+                    }
+                }
+            ?>
+
         </table>
         
         <div class="payment-method">

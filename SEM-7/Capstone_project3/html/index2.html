@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Mate Finder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Open+Sans', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-cream-100">
+    <!-- Navigation Bar -->
+    <nav class="bg-white py-4 shadow-md">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-xl font-semibold text-orange-600">Learning Mate Finder</a>
+                <div class="hidden md:flex space-x-10">
+                    <a href="#" class="text-gray-600 hover:text-orange-500">Home</a>
+                    <a href="#" class="text-gray-600 hover:text-orange-500">About Us</a>
+                    <a href="#" class="text-gray-600 hover:text-orange-500">FAQ</a>
+                    <a href="#" class="text-gray-600 hover:text-orange-500">Sign Up</a>
+                    <a href="#" class="text-gray-600 hover:text-orange-500">Login</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden">
+            <div id="mobile-menu" class="hidden">
+                <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-orange-100">Home</a>
+                <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-orange-100">About Us</a>
+                <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-orange-100">FAQ</a>
+                <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-orange-100">Sign Up</a>
+                <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-orange-100">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+                <div class="mt-10 sm:mt-12 md:mt-16 lg:mt-20 xl:mt-28">
+                    <div class="text-center lg:text-left">
+                        <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+                            <span class="block xl:inline">Connect and Grow</span> 
+                            <span class="block text-orange-600 xl:inline">With Learning Mates</span>
+                        </h1>
+                        <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+                            <div class="rounded-md shadow">
+                                <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-orange-500 hover:bg-orange-600 md:py-4 md:text-lg md:px-10">
+                                    Find Your Learning Mate Today
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+                    <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="https://placehold.co/800x600?text=Diverse+Learners" alt="Diverse learners in a study environment">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overview of the Platform -->
+    <div class="py-12 bg-yellow-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-base text-orange-600 font-semibold tracking-wide uppercase">Discover</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    A New Way to Learn
+                </p>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                    Explore key features that make finding and collaborating with your perfect study partner easier than ever.
+                </p>
+            </div>
+            <div class="mt-10">
+                <!-- Feature Cards -->
+                <!-- Add feature cards with icons and brief descriptions here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <div class="py-12 bg-green-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-base text-orange-600 font-semibold tracking-wide uppercase">Testimonials</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Success Stories
+                </p>
+            </div>
+            <div class="mt-10">
+                <!-- Testimonial Cards -->
+                <!-- Add testimonial cards with user quotes and photos here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <div class="flex space-x-6 md:order-2">
+                    <a href="#" class="text-gray-400 hover:text-gray-500">
+                        <span class="sr-only">Facebook</span>
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-gray-500">
+                        <span class="sr-only">Instagram</span>
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-gray-500">
+                        <span class="sr-only">Twitter</span>
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+                <p class="mt-8 text-center text-base text-gray-400 md:mt-0 md:order-1">
+                    &copy; 2023 Learning Mate Finder. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            var menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
