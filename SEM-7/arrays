@@ -1,4 +1,3 @@
-```markdown
 # Arrays
 
 Arrays are a fundamental data structure in programming. They allow you to store multiple values of the same type in a single variable.
@@ -266,10 +265,3 @@ console.log(mergeSortedArrays([1, 3, 5], [2, 4, 6])); // Output: [1, 2, 3, 4, 5,
 - [GeeksforGeeks: Arrays in JavaScript](https://www.geeksforgeeks.org/arrays-in-javascript/)
 
 Happy coding!
-```
-
-**Changes/Improvements:**
-1. Consistent formatting and indentation.
-2. Added links to external resources in the "Further Reading" section for a better user experience.
-3. Clarified and made some variable names more readable.
-4. General text flow improvement for ease of understanding.
